@@ -1,0 +1,87 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('Funky\ Wallpaper.jpg') center center fixed;
+    background-size: cover;
+}
+
+#calculator-container {
+    text-align: center;
+    color: black;
+}
+
+#title {
+    font-family: 'SnazzyFont', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#calculator {
+    width: 250px;
+    background-color: #d3d3d3;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#display {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 24px;
+    color: #696969;
+    background-color: #d3d3d3;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+button {
+    width: 33.33%;
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white;
+    background-color: #a52a2a;
+    border: 1px solid #8b4513;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #8b4513;
+}
+
+#equals {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+#equals:hover {
+    background-color: #0056b3;
+}
+
+#resultPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+#resultPopup.show {
+    display: block;
+}
